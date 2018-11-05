@@ -83,5 +83,6 @@ class Dog
       FROM dogs
       WHERE name = ?
     SQL
+    
   end
 end
