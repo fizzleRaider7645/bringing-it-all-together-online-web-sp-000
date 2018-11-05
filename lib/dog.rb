@@ -70,7 +70,7 @@ class Dog
   def self.find_or_create_by(name:, breed:)
     dog_row = DB[:conn].execute("SELECT * FROM dogs WHERE name = ? AND breed = ?", name, breed).flatten
     if dog_row.empty?
-      p dog
+      p self
     else
     end
     dog
