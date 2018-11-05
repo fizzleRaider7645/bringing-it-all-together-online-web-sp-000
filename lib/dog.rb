@@ -72,7 +72,6 @@ class Dog
     if dog_row.empty?
       dog = Dog.create(name: dog_row[1], breed: dog_row[2])
     else
-      p self
     end
     dog
   end
