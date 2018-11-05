@@ -73,6 +73,5 @@ class Dog
       p dog_row
     else
     end
-    dog
   end
 end
