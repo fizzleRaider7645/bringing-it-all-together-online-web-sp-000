@@ -46,8 +46,6 @@ class Dog
   end
   
   def self.create(name: name, breed: breed)
-    # name = attributes[:name]
-    # breed = attributes[:breed]
     new_dog = Dog.new(name: name, breed: breed)
     new_dog.save
   end
