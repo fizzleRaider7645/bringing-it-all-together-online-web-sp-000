@@ -72,6 +72,7 @@ class Dog
     if !dog_row.empty?
       p Dog.new(name: dog_row[1], breed: dog_row[2], id: dog_row[3])
     else
+      Dog.create
     end
   end
 end
