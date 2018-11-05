@@ -74,6 +74,6 @@ class Dog
     else
       dog = Dog.create(name: dog_row[1], breed: dog_row[2])
     end
-    p dog
+    dog
   end
 end
