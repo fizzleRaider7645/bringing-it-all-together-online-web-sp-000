@@ -84,5 +84,6 @@ class Dog
       WHERE name = ?
     SQL
     p DB[:conn].execute(sql, name).flatten
+    
   end
 end
