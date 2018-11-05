@@ -72,7 +72,7 @@ class Dog
     if !dog_row.empty?
       dog = Dog.create(name: dog_row[1], breed: dog_row[2])
     else
-      dog = self.find_by_id
+      dog = self.find_by_id(@id)
     end
     dog
   end
