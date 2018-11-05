@@ -84,6 +84,6 @@ class Dog
       WHERE name = ?
     SQL
     dog_row = DB[:conn].execute(sql, name).flatten
-    Dog.new()
+    Dog.new(name: dog_row[1], breed: dog_row[2], id: dog_row[0])
   end
 end
