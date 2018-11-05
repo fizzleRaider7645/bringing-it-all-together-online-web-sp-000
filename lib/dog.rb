@@ -83,7 +83,7 @@ class Dog
       FROM dogs
       WHERE name = ?
     SQL
-    p DB[:conn].execute(sql, name).flatten
-    
+    dog_row = DB[:conn].execute(sql, name).flatten
+    Dog.new()
   end
 end
